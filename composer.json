@@ -1,0 +1,26 @@
+{
+    "name": "silaswint/laravel-number-helper",
+    "require": {
+        "spatie/laravel-package-tools": "^1.16",
+        "illuminate/support": "^10 || ^11",
+        "illuminate/mail": "^10 || ^11",
+        "illuminate/config": "^10 || ^11",
+        "laravel/framework": "^10 || ^11"
+    },
+    "autoload": {
+        "files": [
+            "src/app/helpers.php"
+        ],
+        "psr-4": {
+            "Silaswint\\LaravelNumberHelper\\": "src/",
+            "Silaswint\\LaravelNumberHelper\\App\\": "src/app"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Silaswint\\LaravelNumberHelper\\App\\LaravelNumberHelperProvider"
+            ]
+        }
+    }
+}
